@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Alliance Travel">
+  <defs>
+    <linearGradient id="clay" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9673C"/>
+      <stop offset="1" stop-color="#8C3D1C"/>
+    </linearGradient>
+  </defs>
+  <!-- rounded tile -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#clay)"/>
+  <!-- outer pointed arch (mihrab) -->
+  <path d="M16 52 V30 Q16 14 32 9 Q48 14 48 30 V52 Z" fill="#F3E9DC"/>
+  <!-- inner arch niche -->
+  <path d="M22 52 V31 Q22 20 32 16 Q42 20 42 31 V52 Z" fill="#B5532A"/>
+  <!-- 8-point star (two squares) -->
+  <g transform="translate(32 32)" fill="#E2BD6A">
+    <rect x="-7.5" y="-7.5" width="15" height="15" rx="1.2"/>
+    <rect x="-7.5" y="-7.5" width="15" height="15" rx="1.2" transform="rotate(45)"/>
+  </g>
+  <circle cx="32" cy="32" r="3" fill="#8C3D1C"/>
+</svg>

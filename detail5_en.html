@@ -6,9 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-	<title>Travel with Akmalshoh Uzbekistan</title>
-	<link rel="icon" type="image/png" href="assets/images/travel-favicon.png">
-	<link rel="apple-touch-icon" href="assets/images/travel-favicon.png">
+	<title>Tour itinerary — ALLIANCE TRAVEL</title>
+	<link rel="icon" href="assets/favicon.ico" sizes="any">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="180x180" href="assets/favicon-180.png">
+	<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
@@ -17,7 +19,6 @@
     <!-- Slick slider -->
     <link href="assets/css/slick.css" rel="stylesheet">
     <!-- Theme color -->
-    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
 
     <!-- Main Style -->
     <link href="style.css" rel="stylesheet">
@@ -25,110 +26,62 @@
     <!-- Fonts -->
 
     <!-- Poppins For Title -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Poppins', Arial, sans-serif;
-            margin: 0;
-            padding: 32px 16px;
-            background: #f3f8f6;
-            color: #263238;
-        }
-
-        .container {
-            max-width: 1100px;
-            background: #fff;
-            padding: 28px;
-            border-radius: 8px;
-            box-shadow: 0 18px 45px rgba(15, 118, 110, 0.14);
-        }
-
-        h1,
-        h2 {
-            text-align: center;
-            letter-spacing: 0;
-        }
-
-        h1 {
-            color: #0f766e;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
-
-        h2 {
-            color: #f97316;
-            font-size: 24px;
-            margin-bottom: 24px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            margin-bottom: 40px;
-            background: #fff;
-            border: 1px solid #d8e7e2;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
-        }
-
-        th,
-        td {
-            border: 0;
-            border-bottom: 1px solid #d8e7e2;
-            padding: 12px;
-            text-align: left;
-            vertical-align: top;
-        }
-
-        th {
-            background-color: #0f766e;
-            color: #fff;
-        }
-
-        tbody tr:nth-child(even) {
-            background-color: #f8fbfa;
-        }
-
-        tbody tr:hover {
-            background-color: #fff7ed;
-        }
-
-        img {
-            width: 200px;
-            height: auto;
-            display: block;
-            border-radius: 6px;
-            box-shadow: 0 8px 20px rgba(15, 23, 42, 0.16);
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 18px 8px;
-            }
-
-            .container {
-                padding: 18px 10px;
-            }
-
-            table {
-                display: block;
-                overflow-x: auto;
-            }
-
-            h1 {
-                font-size: 26px;
-            }
-
-            h2 {
-                font-size: 20px;
-            }
+        :root{--clay:#B5532A;--clay-deep:#8C3D1C;--gold:#BE8B2C;--gold-soft:#E2BD6A;
+          --sand:#F3E9DC;--paper:#FBF5EC;--cream:#FFFDF8;--ink:#2E2620;--ink-soft:#5C5046;--line:#E6D7C3;--line-soft:#EFE4D4;}
+        *{box-sizing:border-box}
+        body{font-family:'Manrope',Arial,sans-serif;margin:0;padding:0;background:var(--sand);color:var(--ink);line-height:1.65}
+        .at-detail-bar{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;
+          gap:16px;padding:13px 26px;background:rgba(251,245,236,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+        .at-detail-bar .at-logo{display:inline-flex;align-items:center;gap:11px;text-decoration:none}
+        .at-detail-bar .at-logo img{height:40px;width:40px}
+        .at-detail-bar .wm b{font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:1.08rem;color:var(--ink);line-height:1;display:block}
+        .at-detail-bar .wm small{font-size:.56rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold)}
+        .at-back{display:inline-flex;align-items:center;gap:.5rem;padding:10px 20px;border-radius:999px;
+          background:var(--clay);color:#fff;font-weight:700;font-size:.9rem;text-decoration:none;transition:background .25s,transform .25s}
+        .at-back:hover{background:var(--clay-deep);color:#fff;transform:translateY(-2px)}
+        .container{max-width:1060px;margin:38px auto;background:var(--cream);padding:44px;border-radius:20px;
+          box-shadow:0 34px 64px -34px rgba(58,32,12,.42);border:1px solid var(--line)}
+        .container .container{max-width:none;margin:0;padding:0;background:none;border:0;box-shadow:none}
+        h1,h2{font-family:'Fraunces',Georgia,serif;text-align:center;letter-spacing:-.01em;margin-top:0}
+        h1{color:var(--clay-deep);margin-bottom:8px;font-size:2.05rem;text-transform:none}
+        h2{color:var(--clay);font-size:1.42rem;margin:34px 0 22px;display:flex;align-items:center;justify-content:center;gap:.7rem;font-weight:600}
+        h2::before,h2::after{content:"";height:1px;width:42px;background:var(--gold-soft);display:inline-block}
+        table{width:100%;border-collapse:separate;border-spacing:0;margin:0 0 34px;background:#fff;
+          border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 12px 30px -22px rgba(58,32,12,.4)}
+        th,td{border:0;border-bottom:1px solid var(--line-soft);padding:13px 15px;text-align:left;vertical-align:middle}
+        th{background:var(--ink);color:var(--paper);font-weight:700;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+        tbody tr:nth-child(even){background:var(--paper)}
+        tbody tr:hover{background:var(--sand)}
+        tbody tr:last-child td{border-bottom:0}
+        img{max-width:100%;border-radius:8px;box-shadow:0 10px 20px -10px rgba(58,32,12,.45)}
+        .btn-secondary,.btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--clay)!important;
+          border:1px solid var(--clay)!important;color:#fff!important;border-radius:999px!important;padding:13px 28px!important;
+          font-weight:700;text-decoration:none;box-shadow:0 16px 30px -16px rgba(140,61,28,.8);transition:all .25s}
+        .btn-secondary:hover,.btn:hover{background:var(--clay-deep)!important;border-color:var(--clay-deep)!important;transform:translateY(-2px)}
+        p[style]{color:var(--ink-soft)}
+        @media(max-width:768px){
+          .container{margin:18px 12px;padding:24px 16px}
+          .at-detail-bar{padding:11px 15px}
+          .at-detail-bar .wm small{display:none}
+          h1{font-size:1.5rem}
+          table{display:block;overflow-x:auto}
         }
     </style>
 </head>
 
 <body>
+    <div class="at-detail-bar">
+        <a class="at-logo" href="index_en.html">
+            <img src="assets/images/alliance-logo.png" alt="ALLIANCE TRAVEL">
+            <span class="wm"><b>Alliance Travel</b><small>Uzbekistan</small></span>
+        </a>
+        <a class="at-back" href="index_en.html#mu-featured-tours"><i class="fa fa-arrow-left"></i> Back to tours</a>
+    </div>
+
     <div class="container">
 
         <h1>ONE-DAY TASHKENT TOUR</h1> <br>
@@ -191,7 +144,7 @@
     <div class="row">
         <div class="col-md-10"></div>
         <div class="col-md-2">
-            <a href="https://t.me/+obt6anPU3R85M2Yy" target="_blank" rel="noopener" class="btn btn-secondary">Book Now</a>
+            <a href="https://t.me/+I2Y-y3u0YOZmODYy" target="_blank" rel="noopener" class="btn btn-secondary">Book Now</a>
         </div>
     </div>
 </div>

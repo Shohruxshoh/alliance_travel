@@ -1,0 +1,5 @@
+# Local tooling / OS
+.claude/
+.DS_Store
+*.bak
+__pycache__/
